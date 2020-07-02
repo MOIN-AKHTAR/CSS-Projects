@@ -1,0 +1,39 @@
+#front{
+    height:250px;
+    width:250px;
+    background: darkgreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+#card:hover #front{
+    animation: twirl .3s ease-in-out forwards;
+}
+@keyframes twirl{
+    from{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(90deg);
+    }
+}
+#back{
+    position: absolute;
+    height:250px;
+    width:250px;
+    background: lightgreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    top: 0;
+    left:0;
+    transform: rotateY(90deg);
+}
+#card:hover #back{
+    animation: twirl .3s ease-in-out .3s  reverse forwards ;
+}
+#card{
+    position: relative;
+}

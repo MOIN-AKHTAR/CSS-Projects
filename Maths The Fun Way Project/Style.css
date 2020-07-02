@@ -1,0 +1,147 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+body{
+    box-sizing: inherit;
+}
+
+#container{
+    width:1000px;
+    margin: 2rem auto;
+}
+#header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    text-align: center;
+}
+#header>h1{
+    font-size: 3rem;
+    font-weight: 100;
+    color:#861BBF;
+}
+#header_form{
+    background: linear-gradient(#DBF0A5,#BCEA5F);
+    padding: 20px 10px;
+    width:400px;
+}
+#header_form>form{
+    display: flex;
+    justify-content: space-between;
+}
+#header_form>form>input{
+    padding: 2px 5px;
+    color:orange;
+    font-size: 1rem;
+    width: 200px;
+    background: white url("./images/search.png") right center no-repeat;
+    border:none;
+}
+#header_form>form>input:focus{
+    outline:none;
+}
+#header_form>form>button{
+    padding: 0.5rem 1rem;
+    color: #FFF;
+    font-weight: bolder;
+    background: #A751D6;
+    border: none;
+    font-weight: bolder;
+}
+#navBar{
+    background: linear-gradient(#FAF188,#aef871);
+    margin: 2rem 0;
+    padding: 2rem 0.5rem;
+}
+#items{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+
+}
+#items .item{
+    border-right: 3px solid #A751D6;
+    padding: 0 2rem;
+    height: 30px;
+    line-height: 30px;
+    
+}
+
+#items .active{
+    font-weight: 900;
+}
+#items .item:last-child{
+    border-right: none;
+}
+#items .item a{
+text-decoration: none;
+text-transform: capitalize;
+font-size: 1.5rem;
+color: #A751D6;
+transition: all 0.3s linear;
+}
+#items .item a:hover{
+    font-size: 1.7rem;
+}
+#information{
+    padding:2rem 1rem;
+    background: linear-gradient(#FAF188,#aef871);
+    margin:2rem 0;
+}
+#information>h1{
+    margin: 2rem 0;
+    color:#316901;
+    font-size: 2.5rem;
+}
+#information>p{
+    font-size: 1.5rem;
+    color:#629B5A;
+}
+#list-section{
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0;
+}
+#list-section .list-title{
+    color:indigo;
+    font-size: 2.5rem;
+    margin: 1rem;
+}
+#left-list,#right-list{
+    flex:0 0 calc(50% - 1rem);
+    border:1px solid lightgreen;
+    padding: 1.5rem 1rem;
+    border-radius: 0.5rem;
+}
+#left-list>ul,#right-list>ul{
+  list-style: none;
+}
+#left-list>ul li{
+    padding-left: 1rem;
+    line-height: 2rem;
+    margin-left: 1.5rem;
+    list-style-image: url("./images/arrow.png");
+    transition:all 0.3s linear;
+}
+#right-list>ul li{
+    padding-left: 1rem;
+    line-height: 2rem;
+    margin-left: 2.5rem;
+    list-style-image: url("./images/tick.png");
+    
+}
+#list-section a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition:all 0.3s linear;
+}
+#left-list>ul li a:hover,#right-list>ul li a:hover{
+font-size: 1.7rem;
+}
+footer{
+    padding:2rem 0.5rem;
+    background: linear-gradient(#FAF188,#aef871);
+}
